@@ -1,0 +1,26 @@
+INPUTS 
+customer_name 
+purchase_amount 
+tax_code
+
+OUTPUTS 
+customer_name 
+purchase_amount 
+sales-Tax
+totla_amount_du e
+
+PROCESSING STEPS 
+read customer_name,purchase_amount, tax_code
+
+if tax_code = 0 then 
+	taxcode_precent + 0 
+else if taxcode = 1 then 
+		taxcode_precent = 3
+else if taxcode = 2 then 
+		taxcode_precent = 5
+else if taxcode  = 3 
+		then taxcode_precent= 7	
+tax_due + purchase_amount * (tax_percent/100)
+Totalamount = purchase_amount + tax_due
+
+Display customer_name,purchase_amount,tax_due,tota_amount-due 
